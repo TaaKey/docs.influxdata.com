@@ -13,13 +13,14 @@ It is an integral component of the
 [TICK stack](https://influxdata.com/time-series-platform/).
 InfluxDB is meant to be used as a backing store for any use case involving large amounts of timestamped data, including DevOps monitoring, application metrics, IoT sensor data, and real-time analytics.
 
-InfluxDB 是一种时间序列数据库(有时也叫做：实时数据库)，其被设计用来处理高写入、查询平衡的业务场景。
-它是。
-InfluxDB 是用来处理任何含有大量的时间戳数据的后台保存，包括 DevOps监控、应用程序指标监控、物联网传感器数据、以及实时分析。
+InfluxDB 是一个用于处理高写入和查询负载的时间序列数据库，它是Influxdata平台TICK中的一个组成部分。
+InfluxDB 是用于处理含有大量的时间戳数据的业务场景（包括DevOps监测，应用指标，物联网传感器的数据，以及实时分析等等）的数据后台存储。
 
 ## Key features
+## 重要特性
 
 Here are some of the features that InfluxDB currently supports that make it a great choice for working with time series data.
+对于下面这些特点的支持，使得 InfluxDB 成为了当前处理时间序列数据的一个很好的选择。
 
 * Custom high performance datastore written specifically for time series data.
 The TSM engine allows for high ingest speed and data compression
@@ -34,3 +35,5 @@ It compiles into a single binary with no external dependencies.
 
 The open source edition of InfluxDB runs on a single node.
 If you require high availability to eliminate a single point of failure, consider the [InfluxDB Enterprise Edition](https://docs.influxdata.com/influxdb/v1.5/high_availability/).
+
+当前，开源版本的 InfluxDB 仅支持单节点模式；如若需要集群版本，请考虑 [InfluxDB企业版](https://docs.influxdata.com/influxdb/v1.5/high_availability/).
